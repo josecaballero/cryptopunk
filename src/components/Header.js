@@ -23,9 +23,9 @@ const Header = () => {
       </div>
 
       <div className="headerItemsContainer">
-        <p class="headerItem">Drops</p>
-        <p class="headerItem">Marketplace</p>
-        <p class="headerItem">Create</p>
+        <p className="headerItem">Drops</p>
+        <p className="headerItem">Marketplace</p>
+        <p className="headerItem">Create</p>
       </div>
 
       <div className="headerActions">
@@ -38,7 +38,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div class="loginButton">GET IN</div>
+      <div className="loginButton">GET IN</div>
     </div>
   );
 };
