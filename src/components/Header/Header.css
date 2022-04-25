@@ -3,7 +3,10 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  height: 100px;
+  /* height: 100px; */
+  /*   paddin0px 0;
+ */
+  margin-bottom: 50px;
   gap: 30px;
 }
 
@@ -62,10 +65,11 @@
   border-radius: 50%;
   padding: 10px;
   cursor: pointer;
+  transition: opacity 0.3s ease-out;
 }
 
 .themeSwitchContainer:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .themeSwitch {
@@ -82,5 +86,5 @@
 }
 
 .loginButton:hover {
-  opacity: 0.9;
+  opacity: 0.8;
 }
