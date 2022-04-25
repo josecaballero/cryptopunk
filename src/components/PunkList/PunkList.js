@@ -5,15 +5,15 @@ import "./PunkList.css";
 const PunkList = ({ punkListData, setSelectedPunk }) => {
   return (
     <div className="punkList">
-      {punkListData.map((punk) => {
+      {punkListData.map((punk, index) => {
+        const { token_id, name, traits, image_url } = punk;
         return (
-          <div onClick={() => setSelectedPunk(punk.token_id)}>
+          <div key={index} onClick={() => setSelectedPunk(token_id)}>
             <CollectionCard
-              key={punk.token_id}
-              id={punk.token_id}
-              name={punk.name}
-              traits={punk.traits}
-              image={punk.image_url}
+              id={token_id}
+              name={name}
+              traits={traits}
+              image={image_url}
             />
           </div>
         );
